@@ -16,6 +16,7 @@ public class follow_plane : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = plane.transform.position + offset;
+        transform.position = new Vector3(plane.transform.position.x + offset.x, transform.position.y, transform.position.z);
+        // transform.Translate(plane.transform.position + offset) ;
     }
 }
