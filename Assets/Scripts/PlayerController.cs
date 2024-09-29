@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
         
     }
 
-    private float speed = 20;
+    private float speed = 15;
     private float horizontalInput;
     private float verticalInput;
 
