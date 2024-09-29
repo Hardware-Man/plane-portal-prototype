@@ -15,6 +15,8 @@ public class Portal : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D entity)
     {
+        if (entity.gameObject.tag != "Player") return;
+
         Vector2 destination;
         GameObject portalDestObj;
 
