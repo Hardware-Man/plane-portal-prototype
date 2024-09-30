@@ -19,7 +19,7 @@ public class GameOverController : MonoBehaviour
     void Update()
     {
         // Detect any key press or mouse click
-        if (Input.anyKeyDown || Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.Return))
         {
             RestartGame(); // Call the restart function
         }
