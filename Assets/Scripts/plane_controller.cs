@@ -19,12 +19,21 @@ public class plane_controller : MonoBehaviour
         {
             Debug.Log("Collision with Wall detected!");
 
-            PlayerPrefs.SetString("LastLoadedScene", SceneManager.GetActiveScene().name);
-            PlayerPrefs.Save();
+            // PlayerPrefs.SetString("LastLoadedScene", SceneManager.GetActiveScene().name);
+            // PlayerPrefs.Save();
 
             // Attempt to load the Game Over scene
             Debug.Log("Loading Game Over Scene...");
             SceneManager.LoadScene("GameOver");
+        }
+
+        if (collision.gameObject.tag == "finish-line")
+        {
+            Debug.Log("Collision with finish line detected!");
+
+            // Attempt to load the Game Over scene
+            Debug.Log("Loading you win Scene...");
+            SceneManager.LoadScene("YouWin");
         }
     }
 
