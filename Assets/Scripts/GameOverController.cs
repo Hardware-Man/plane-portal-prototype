@@ -38,7 +38,7 @@ public class GameOverController : MonoBehaviour
     // Function to reload the previous scene
     public void RestartGame()
     {
-        SceneManager.LoadScene("FromClass");
+        SceneManager.LoadScene("yy");
     }
 
     public void MainMenu()

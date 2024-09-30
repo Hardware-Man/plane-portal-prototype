@@ -29,7 +29,7 @@ public class StartMenuScript : MonoBehaviour
     // Function to reload the previous scene
     public void StartGame()
     {
-        SceneManager.LoadScene("FromClass");
+        SceneManager.LoadScene("yy");
     }
 
     public void Controls()
