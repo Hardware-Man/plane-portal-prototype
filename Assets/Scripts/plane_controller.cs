@@ -19,6 +19,9 @@ public class plane_controller : MonoBehaviour
         {
             Debug.Log("Collision with Wall detected!");
 
+            PlayerPrefs.SetString("LastLoadedScene", SceneManager.GetActiveScene().name);
+            PlayerPrefs.Save();
+
             // Attempt to load the Game Over scene
             Debug.Log("Loading Game Over Scene...");
             SceneManager.LoadScene("GameOver");
