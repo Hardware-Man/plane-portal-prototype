@@ -14,8 +14,8 @@ public class MoveObjectPace : MonoBehaviour
     void Update()
     {
         // 使用 Mathf.Pow 让物体的上下移动有先慢后快的效果
-        float timeFactor = Mathf.Pow(Time.time, 1.5f); // 指数 1.5 使时间加速变化
-        float newY = Mathf.Sin(timeFactor * speed) * height;
+        // float timeFactor = Mathf.Pow(Time.time, 1.5f); // 指数 1.5 使时间加速变化
+        float newY = Mathf.Sin(5 * Time.time * speed) * height;
 
         transform.position = new Vector3(startPos.x, startPos.y + newY, startPos.z);
     }
